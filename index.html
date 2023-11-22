@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="top-panel">
+        <div class="title-section">
+          <h1>Dashboard intro title</h1>
+          <p>Ac vulputate purus semper fusce at. Non dolor in cras.</p>
+        </div>
+        <div class="tabs">
+          <button type="button">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Icon">
+                <path
+                  id="Vector"
+                  d="M12 13.3334V6.66669"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_2"
+                  d="M8 13.3334V2.66669"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_3"
+                  d="M4 13.3333V9.33331"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+            <span>Compare</span>
+          </button>
+          <button type="button" class="active">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Icon">
+                <path
+                  id="Vector"
+                  d="M13.3333 4.66669H2.66659C1.93021 4.66669 1.33325 5.26364 1.33325 6.00002V12.6667C1.33325 13.4031 1.93021 14 2.66659 14H13.3333C14.0696 14 14.6666 13.4031 14.6666 12.6667V6.00002C14.6666 5.26364 14.0696 4.66669 13.3333 4.66669Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_2"
+                  d="M10.6666 14V3.33333C10.6666 2.97971 10.5261 2.64057 10.2761 2.39052C10.026 2.14048 9.68687 2 9.33325 2H6.66659C6.31296 2 5.97383 2.14048 5.72378 2.39052C5.47373 2.64057 5.33325 2.97971 5.33325 3.33333V14"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+            <span>Managers</span>
+          </button>
+          <button type="button">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Icon" clip-path="url(#clip0_401_122)">
+                <path
+                  id="Vector"
+                  d="M11.3334 14V12.6667C11.3334 11.9594 11.0525 11.2811 10.5524 10.781C10.0523 10.281 9.37399 10 8.66675 10H3.33341C2.62617 10 1.94789 10.281 1.4478 10.781C0.9477 11.2811 0.666748 11.9594 0.666748 12.6667V14"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_2"
+                  d="M5.99992 7.33333C7.47268 7.33333 8.66659 6.13943 8.66659 4.66667C8.66659 3.19391 7.47268 2 5.99992 2C4.52716 2 3.33325 3.19391 3.33325 4.66667C3.33325 6.13943 4.52716 7.33333 5.99992 7.33333Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_3"
+                  d="M15.3333 14V12.6667C15.3328 12.0758 15.1362 11.5019 14.7742 11.0349C14.4122 10.5679 13.9053 10.2344 13.3333 10.0867"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector_4"
+                  d="M10.6667 2.08667C11.2404 2.23354 11.7488 2.56714 12.1118 3.03488C12.4749 3.50262 12.672 4.07789 12.672 4.67C12.672 5.26212 12.4749 5.83739 12.1118 6.30513C11.7488 6.77287 11.2404 7.10647 10.6667 7.25334"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+
+            <span>Employees</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ========== WIDGETS ========== -->
+      <div class="widgets">
+        <section class="widget">
+          <div class="widget-header">
+            <h2>RLQ</h2>
+          </div>
+          <figure class="widget-chart">
+            <div class="area-chart">
+              <table
+                class="charts-css area multiple hide-data show-9-secondary-axes"
+              >
+                <caption>
+                  Area Chart
+                </caption>
+
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td style="--start: 0.5; --end: 0.6; --color: #e9ac90"></td>
+                    <td style="--start: 0.6; --end: 0.5; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td
+                      style="--start: 0.6; --end: 0.65; --color: #e9ac90"
+                    ></td>
+                    <td
+                      style="--start: 0.5; --end: 0.55; --color: #f18c5c"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td
+                      style="--start: 0.65; --end: 0.55; --color: #e9ac90"
+                    ></td>
+                    <td
+                      style="--start: 0.55; --end: 0.45; --color: #f18c5c"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td
+                      style="--start: 0.55; --end: 0.52; --color: #e9ac90"
+                    ></td>
+                    <td
+                      style="--start: 0.45; --end: 0.47; --color: #f18c5c"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td
+                      style="--start: 0.52; --end: 0.5; --color: #e9ac90"
+                    ></td>
+                    <td
+                      style="--start: 0.47; --end: 0.5; --color: #f18c5c"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="area-chart_info">
+              <span class="area-chart_info-percentage"
+                >59,47 <span>%</span></span
+              >
+              <span class="area-chart_info-count">56 884</span>
+            </div>
+          </figure>
+        </section>
+
+        <section class="widget">
+          <div class="widget-header">
+            <h2>KI</h2>
+          </div>
+          <figure class="widget-chart">
+            <img src="../assets/KI.png" alt="MZI" width="147px" />
+          </figure>
+        </section>
+
+        <section class="widget">
+          <div class="widget-header">
+            <h2>MZI</h2>
+          </div>
+          <figure class="widget-chart">
+            <img src="../assets/MZI@3x.png" alt="MZI" width="147px" />
+          </figure>
+        </section>
+
+        <section class="widget">
+          <div class="widget-header">
+            <h2>Survey Topics</h2>
+          </div>
+          <figure class="widget-chart widget-chart_list">
+            <ol type="A">
+              <li><span>Pulvinar iaculis placerat vitae dui</span></li>
+              <li><span>Massa morbi mattis lectus ornare</span></li>
+              <li><span>Diam sem vestibulum purus morbi</span></li>
+              <li><span>Lorem ipsum dolor sit amet</span></li>
+            </ol>
+          </figure>
+        </section>
+
+        <section class="widget widget--large widget--5">
+          <div class="widget-header">
+            <h2>Survey Topics Scores</h2>
+          </div>
+          <figure class="widget-chart">
+            <div id="column-chart" class="column-chart">
+              <div class="secondary-axes_titles">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+              </div>
+              <table
+                class="charts-css column show-labels show-primary-axis show-4-secondary-axes data-spacing-16"
+              >
+                <caption>
+                  Column Example #9
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Year</th>
+                    <th scope="col">Progress</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">A</th>
+                    <td style="--size: 0.9; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">B</th>
+                    <td style="--size: 0.2; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">C</th>
+                    <td style="--size: 0.3; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D</th>
+                    <td style="--size: 0.9; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">E</th>
+                    <td style="--size: 0.1; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">F</th>
+                    <td style="--size: 0.9; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">G</th>
+                    <td style="--size: 0.9; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">H</th>
+                    <td style="--size: 0.2; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">I</th>
+                    <td style="--size: 0.3; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">J</th>
+                    <td style="--size: 0.9; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">K</th>
+                    <td style="--size: 0.1; --color: #f18c5c"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">L</th>
+                    <td style="--size: 0.9; --color: #f18c5c"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </figure>
+        </section>
+
+        <section class="widget widget--large widget--6">
+          <div class="widget-header">
+            <h2>KPs</h2>
+          </div>
+          <figure class="widget-chart">
+            <div id="column-chart" class="column-chart kp-chart">
+              <div class="secondary-axes_titles">
+                <span>100%</span>
+                <span>75%</span>
+                <span>50%</span>
+                <span>25%</span>
+                <span>0</span>
+              </div>
+              <table
+                class="charts-css column show-labels show-primary-axis show-4-secondary-axes data-spacing-16"
+              >
+                <caption>
+                  Column Example #010
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Year</th>
+                    <th scope="col">Progress</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">KP 1</th>
+                    <td style="--size: 0.9; --color: #5155c3"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">KP 2</th>
+                    <td style="--size: 0.7; --color: #597dbe"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">KP 3</th>
+                    <td style="--size: 0.2; --color: #5f99bb"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">KP 4</th>
+                    <td style="--size: 0.6; --color: #65b8b7"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">KP 5</th>
+                    <td style="--size: 0.2; --color: #6cddb1"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </figure>
+          <div class="chart-legend">
+            <span class="chart-legend_text" style="--legend-color: #5155c3"
+              >KP 1</span
+            >
+            <span class="chart-legend_text" style="--legend-color: #597dbe"
+              >KP 2</span
+            >
+            <span class="chart-legend_text" style="--legend-color: #5f99bb"
+              >KP 3</span
+            >
+            <span class="chart-legend_text" style="--legend-color: #65b8b7"
+              >KP 4</span
+            >
+            <span class="chart-legend_text" style="--legend-color: #6cddb1"
+              >KP 5</span
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
