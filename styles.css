@@ -183,7 +183,7 @@ main {
     top: calc(50% - 0.8em);
     width: 1.6em;
     height: 1.6em;
-    background: url('../assets/info.svg');
+    background: url('assets/info.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -282,7 +282,7 @@ main {
     display: inline-block;
     width: 1em;
     height: 1em;
-    background: url('../assets/persons.svg');
+    background: url('assets/persons.svg');
     background-repeat: no-repeat;
     background-position: center;
 
